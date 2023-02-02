@@ -465,3 +465,39 @@ Submit
 `;
 ```
 
+# 09_DOM Project
+# Original Page
+
+## ![Original Page](./original/DOM_9/ass9.1-before.png)
+
+#  Achieve the following with DOM manipulation
+
+## ![Output Page](./DOM_9/ass9.1-after.png)
+
+
+# Here, JavaScript Code
+```
+let val = document.querySelector("h1");
+val.style.color = 'red';
+
+let cart = document.querySelector(".add-to-cart");
+cart.innerHTML = `<img src="./images/icon-cart.svg" />Add to Cart`;
+```
+# Original Page
+
+## ![Original Page](./original/DOM_9/ass9.2-before.png)
+
+#  Achieve the following with DOM manipulation
+
+## ![Output Page](./DOM_9/ass9.2-after.png)
+
+# Here, JavaScript Code
+```
+let btn = document.querySelector(".add-to-cart");
+btn.addEventListener('mouseover', function () {
+    btn.style.backgroundColor = "red";
+})
+btn.addEventListener('mouseleave', function () {
+    btn.style.backgroundColor = " hsl(158, 36%, 37%)";
+})
+```
